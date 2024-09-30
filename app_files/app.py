@@ -2,9 +2,9 @@ from shiny import App, render, ui
 import pandas as pd
 import plotly.graph_objects as go
 
-data_pop_ua_present = pd.read_csv('./app_files/ukr_pop_present.csv', sep=",", decimal=".")
+data_pop_ua_present = pd.read_csv('ukr_pop_present.csv', sep=",", decimal=".")
 df_present_pop = pd.DataFrame(data_pop_ua_present)
-data_pop_ua_resident = pd.read_csv('./app_files/ukr_pop_resident.csv', sep=",", decimal=".")
+data_pop_ua_resident = pd.read_csv('ukr_pop_resident.csv', sep=",", decimal=".")
 df_resident_pop = pd.DataFrame(data_pop_ua_resident)
 
 app_ui = ui.page_fluid(
