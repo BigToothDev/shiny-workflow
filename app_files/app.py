@@ -22,15 +22,6 @@ app_ui = ui.page_fluid(
             ),  
             ui.output_ui("present_pop_plot"),
         ),
-        ui.nav_panel("Ukraine population: Resident", 
-                     ui.input_selectize(  
-                "selectize",  
-                "Select an option below:",  
-                {"Urban": "Urban Population", "Rural": "Rural Population", "Total": "Total Population"},  
-                selected="Urban"
-            ),  
-            ui.output_ui("present_pop_plot"),
-        ),
         id="tab",
     )
 )
